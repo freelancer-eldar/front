@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Эльдар - о Front-End</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/logo/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div class="scrollprogress df">
+		<div class="scrollprogress__line"></div>
+	</div>
+	<header class="header unselect">
+		<div class="container">
+			<div class="header__row df">
+				<div class="header__column df">
+					<div class="header__logo-wrap" data-aos="fade-right">
+						<img class="header__logo" src="images/logo/logo_full.svg" data-scroll=".page" alt="Эльдар">
+					</div>
+				</div>
+				<div class="header__column df">
+					<ul class="header__list df">
+						<li class="header__list-item" data-scroll=".about">
+							<div class="header__list-item-wrap" data-aos="fade-down">
+								<span>Кратко</span>
+							</div>
+						</li>
+						<li class="header__list-item" data-scroll=".pluses">
+							<div class="header__list-item-wrap" data-aos="fade-down" data-aos-delay="150">
+								<span>Плюсы</span>
+							</div>
+						</li>
+						<li class="header__list-item" data-scroll=".minuses">
+							<div class="header__list-item-wrap" data-aos="fade-down" data-aos-delay="300">
+								<span>Минусы</span>
+							</div>
+						</li>
+						<li class="header__list-item" data-scroll=".total">
+							<div class="header__list-item-wrap" data-aos="fade-down" data-aos-delay="450">
+								<span>Общее</span>
+							</div>
+						</li>
+						<li class="header__list-item" data-scroll=".footer">
+							<div class="header__list-item-wrap" data-aos="fade-down" data-aos-delay="600">
+								<span>Контакты</span>
+							</div>
+						</li>
+					</ul>
+					<div class="header__link-wrap" data-aos="fade-left" data-aos-delay="600">
+						<a class="header__link btn" href="https://syxx503.github.io/my-social">Я Онлайн<span></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="page df">
+		<div class="container">
+			<div class="page__wrapper">
+				<div class="page__row df">
+					<div class="page__column page__column_1 df">
+						<div class="page__content">
+							<h1 class="page__title" data-aos="fade-right">Frond-End Разработчик</h1>
+							<p class="page__text" data-aos="fade-right" data-aos-delay="150">Профессия IT-сферы, которая направлена на показ пользователю содержания и работы элементов ПО.</p>
+							<div class="page__btn-wrap" data-aos="fade-right" data-aos-delay="300">
+								<button class="page__btn" data-scroll=".about">Продолжить</button>
+							</div>
+						</div>
+					</div>
+					<div class="page__column page__column_2 df">
+						<div class="page__image-wrap" data-aos="fade-left" data-aos-delay="450">
+							<img class="page__image" src="images/section/page.svg" alt="Page Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="skills">
+		<div class="skills__row df">
+			<div class="skills__column skills__column_1" data-aos="fade-down" data-aos-delay="600" data-aos-anchor=".page__title" data-aos-offset="0">
+				<div class="skills__item df">
+					<div class="skills__item-column skills__item-column_1 df">
+						<div class="item">
+							<span class="item__icon icon-profile"></span>
+						</div>
+					</div>
+					<div class="skills__item-column skills__item-column_2 df">
+						<h3 class="skills__title skills__title_counter" data-counter-value="8893">0</h3>
+						<div class="skills__subtext">Посещений</div>
+					</div>
+				</div>
+			</div>
+			<div class="skills__column skills__column_2" data-aos="fade-down" data-aos-delay="750" data-aos-anchor=".page__title" data-aos-offset="0">
+				<div class="skills__item df">
+					<div class="skills__item-column skills__item-column_1 df">
+						<div class="item">
+							<span class="item__icon icon-time"></span>
+						</div>
+					</div>
+					<div class="skills__item-column skills__item-column_2 df">
+						<h3 class="skills__title skills__title_counter-float" data-counter-value="5.6">0.0</h3>
+						<div class="skills__subtext">Лет опыта</div>
+					</div>
+				</div>
+			</div>
+			<div class="skills__column skills__column_3" data-aos="fade-down" data-aos-delay="900" data-aos-anchor=".page__title" data-aos-offset="0">
+				<div class="skills__item df">
+					<div class="skills__item-column skills__item-column_1 df">
+						<div class="item">
+							<span class="item__icon icon-server"></span>
+						</div>
+					</div>
+					<div class="skills__item-column skills__item-column_2 df">
+						<h3 class="skills__title skills__title_counter" data-counter-value="29">0</h3>
+						<div class="skills__subtext">Сайтов</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		let val = localStorage.getItem("visits");
+		if (val && +val){
+			document.querySelectorAll(`.skills__title_counter`)[0].setAttribute("data-counter-value", val);
+		};
+	</script>
+	<section class="about">
+		<div class="container">
+			<div class="about__content">
+				<div class="about__row df">
+					<div class="about__column about__column_1 df">
+						<div class="about__image-wrap" data-aos="fade-right" data-aos-delay="">
+							<img class="about__image" src="images/section/about.svg" alt="About Image">
+						</div>
+					</div>
+					<div class="about__column about__column_2 df">
+						<div class="about__content-wrap content">
+							<div class="content__wrap">
+								<h2 class="content__title" data-aos="fade-left">Кто это такой?</h2>
+								<div class="content__text-wrap" data-aos="fade-left" data-aos-delay="150" data-aos-anchor=".content__title">
+									<p class="content__text">Front-End разработчик - это специалист, занимающийся созданием интерфейса и контактом с пользователем.</p>
+								</div>
+							</div>
+							<div class="content__wrap">
+								<h2 class="content__title" data-aos="fade-left" data-aos-delay="300" data-aos-anchor=".content__title">Что он делает?</h2>
+								<div class="content__items-wrap">
+									<div class="content__items-row df">
+										<div class="content__items-column df">
+											<div class="content__items-item df" data-aos="fade-down" data-aos-delay="400" data-aos-anchor=".content__title">
+												<div class="content__check-wrap">
+													<span class="icon-check"></span>
+												</div>
+												<div class="content__item-words">Верстает макеты</div>
+											</div>
+										</div>
+										<div class="content__items-column df">
+											<div class="content__items-item df" data-aos="fade-down" data-aos-delay="500" data-aos-anchor=".content__title">
+												<div class="content__check-wrap">
+													<span class="icon-check"></span>
+												</div>
+												<div class="content__item-words">Работает с данными</div>
+											</div>
+										</div>
+										<div class="content__items-column content__items-column_margin df">
+											<div class="content__items-item df" data-aos="fade-down" data-aos-delay="600" data-aos-anchor=".content__title">
+												<div class="content__check-wrap">
+													<span class="icon-check"></span>
+												</div>
+												<div class="content__item-words">Адаптирует сайты</div>
+											</div>
+										</div>
+										<div class="content__items-column content__items-column_margin df">
+											<div class="content__items-item df" data-aos="fade-down" data-aos-delay="700" data-aos-anchor=".content__title">
+												<div class="content__check-wrap">
+													<span class="icon-check"></span>
+												</div>
+												<div class="content__item-words">Тестирует ПО</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about__dblinfo df" data-aos="fade" data-aos-delay="650" data-aos-anchor=".content__title">
+			<h2 class="about__dblinfo-title" data-aos="fade-up" data-aos-delay="800" data-aos-anchor=".content__title">Ты в зоне Front-End</h2>
+			<p class="about__dblinfo-text" data-aos="fade-up" data-aos-delay="950" data-aos-anchor=".content__title">Многие каждый день заходят на сайты и просматривают страницы. Это происходит и сейчас...</p>
+			<div class="about__btn-wrap" data-aos="fade-up" data-aos-delay="1100" data-aos-anchor=".content__title">
+				<button class="about__btn btn" data-scroll=".pluses">Плюсы работы</button>
+			</div>
+		</div>
+	</section>
+	<section class="pluses">
+		<div class="container">
+			<div class="pluses__content">
+				<div class="pluses__row df">
+					<div class="pluses__column pluses__column_1">
+						<div class="pluses__content-wrap content">
+							<div class="content__wrap">
+								<h2 class="pluses__title content__title" data-aos="fade-right">Плюсы профессии</h2>
+								<div class="content__text-wrap" data-aos="fade-right" data-aos-delay="150" data-aos-anchor=".pluses__title">
+									<p class="content__text">Разработчики славятся возможностями проявлять себя где угодно в долгосрочной перспективе, чтобы это было интересно и прибыльно. Это и есть Front-End.</p>
+								</div>
+							</div>
+							<div class="content__wrap">
+								<div class="content__items-wrap">
+									<div class="content__items-row df">
+										<div class="content__items-column df">
+											<div class="content__items-item" data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".pluses__title">
+												<div class="item">
+													<span class="item__icon icon-money"></span>
+												</div>
+												<div class="pluses__words content__item-words">Нет ограничений в заработке. Всё зависит от тебя</div>
+											</div>
+										</div>
+										<div class="content__items-column df">
+											<div class="content__items-item" data-aos="fade-up" data-aos-delay="450" data-aos-anchor=".pluses__title">
+												<div class="item">
+													<span class="item__icon icon-group"></span>
+												</div>
+												<div class="pluses__words content__item-words">Множество возможностей работы</div>
+											</div>
+										</div>
+										<div class="content__items-column content__items-column_margin df">
+											<div class="content__items-item" data-aos="fade-up" data-aos-delay="600" data-aos-anchor=".pluses__title">
+												<div class="item">
+													<span class="item__icon icon-grand"></span>
+												</div>
+												<div class="pluses__words content__item-words">Долгосрочная востребованность специалистов</div>
+											</div>
+										</div>
+										<div class="content__items-column content__items-column_margin df">
+											<div class="content__items-item" data-aos="fade-up" data-aos-delay="750" data-aos-anchor=".pluses__title">
+												<div class="item">
+													<span class="item__icon icon-star"></span>
+												</div>
+												<div class="pluses__words content__item-words">Интересная работа. Можно использовать как хобби</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pluses__column pluses__column_2">
+						<div class="pluses__image-wrap" data-aos="fade-left" data-aos-delay="900" data-aos-anchor=".pluses__title">
+							<img class="pluses__image" src="images/section/pluses.svg" alt="Pluses Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="companies">
+		<h2 class="companies__title" data-aos="fade-up" data-aos-delay="1050" data-aos-anchor=".pluses__title">Им нужны разработчики</h2>
+		<div class="companies__wrapper" data-aos="fade-up" data-aos-delay="1200" data-aos-anchor=".pluses__title">
+			<div class="companies__row df">
+				<div class="companies__item">
+					<img src="images/companies/netflix.svg" alt="Netflix">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/reddit.svg" alt="Reddit">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/amazon.svg" alt="Amazon">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/discord.svg" alt="Discord">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/spotify.svg" alt="Spotify">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/google.svg" alt="Google">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/microsoft.svg" alt="Microsoft">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/tesla.svg" alt="Tesla">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/kaspersky.svg" alt="Kaspersky">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/yandex.svg" alt="Yandex">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/sony.svg" alt="Sony">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/mailru.svg" alt="Mail.ru">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/netflix.svg" alt="Netflix">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/reddit.svg" alt="Reddit">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/amazon.svg" alt="Amazon">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/discord.svg" alt="Discord">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/spotify.svg" alt="Spotify">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/google.svg" alt="Google">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/microsoft.svg" alt="Microsoft">
+				</div>
+				<div class="companies__item">
+					<img src="images/companies/tesla.svg" alt="Tesla">
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="minuses">
+		<div class="container">
+			<div class="minuses__content">
+				<h2 class="minuses__title" data-aos="fade-down">Минусы профессии</h2>
+				<div class="minuses__row df">
+					<div class="minuses__column minuses__column_1 df">
+						<div class="minuses__items-wrap">
+							<div class="minuses__item" data-aos="fade-right" data-aos-delay="150" data-aos-anchor=".minuses__title">
+								<div class="item">
+									<span class="item__icon icon-wrist-pain"></span>
+								</div>
+								<h3 class="minuses__item-title">Боли по всему телу</h3>
+								<p class="minuses__item-text">От неправильной работы могут начаться проблемы со зрением, суставами и костями</p>
+							</div>
+							<div class="minuses__item" data-aos="fade-right" data-aos-delay="300" data-aos-anchor=".minuses__title">
+								<div class="item">
+									<span class="item__icon icon-mental"></span>
+								</div>
+								<h3 class="minuses__item-title">Психические расстройства</h3>
+								<p class="minuses__item-text">Вследствие вдумчивости человек может надолго заболеть, потерять энергию и некоторые эмоции</p>
+							</div>
+						</div>
+					</div>
+					<div class="minuses__column minuses__column_2 df">
+						<div class="minuses__image-wrap" data-aos="fade" data-aos-delay="450" data-aos-anchor=".minuses__title">
+							<img class="minuses__image" src="images/section/minuses.svg" alt="Minuses Image">
+						</div>
+					</div>
+					<div class="minuses__column minuses__column_3 df">
+						<div class="minuses__items-wrap">
+							<div class="minuses__item" data-aos="fade-left" data-aos-delay="150" data-aos-anchor=".minuses__title">
+								<div class="item">
+									<span class="item__icon icon-infinite"></span>
+								</div>
+								<h3 class="minuses__item-title">Постоянная работа</h3>
+								<p class="minuses__item-text">Для того, чтобы быть востребованным специалистом нужно очень много работать и учиться</p>
+							</div>
+							<div class="minuses__item" data-aos="fade-left" data-aos-delay="300" data-aos-anchor=".minuses__title">
+								<div class="item">
+									<span class="item__icon icon-binary"></span>
+								</div>
+								<h3 class="minuses__item-title">Глубокие выгорания</h3>
+								<p class="minuses__item-text">После вовлечения в работу разработчик уже находится на крючке выгорания и будущего страдания</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="total">
+		<div class="container">
+			<div class="total__content">
+				<div class="total__row df">
+					<div class="total__column total__column_1">
+						<div class="content">
+							<div class="content__wrap">
+								<h2 class="total__title content__title" data-aos="fade-right">Итог</h2>
+								<div class="content__text-wrap">
+									<p class="content__text" data-aos="fade-right" data-aos-delay="150" data-aos-anchor=".total__title">Front-End разработка подарила мне множество эмоций. Первые созданные сервисы и лэндинги показали, что нет ничего невозможного в саморазвитии. Пусть даже если ничего в начале не получается.</p>
+									<p class="content__text" data-aos="fade-right" data-aos-delay="300" data-aos-anchor=".total__title">Всякая профессия имеет плюсы и минусы, поэтому нельзя сказать, что из-за минусов её нельзя выбрать. Ведь для того, чтобы преуспеть, нужно очень хотеть и самое главное - делать.</p>
+								</div>
+								<div class="content__btn-wrap" data-aos="fade-right" data-aos-delay="450" data-aos-anchor=".total__title">
+									<button class="content__btn btn" data-scroll=".footer">Дополнительно</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="total__column total__column_2">
+						<div class="total__image-wrap" data-aos="fade-left" data-aos-delay="600" data-aos-anchor=".total__title">
+							<img class="total__image" src="images/section/total.svg" alt="Total Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__info-wrap">
+				<div class="footer__info-center df" data-aos="fade-down" data-aos-anchor=".footer__logo-wrap" data-aos-delay="1650">
+					<div class="footer__info-column">
+						<div class="footer__info-content">
+							<h2 class="footer__info-title">Сделай правильный выбор - <br><span class="footer__break-effect unselect">не </span> работай разработчиком</h2>
+							<div class="footer__info-text">Но перед этим ещё раз подумай...</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__wrapper">
+				<div class="footer__row df">
+					<div class="footer__column footer__column_1 df">
+						<div class="footer__main">
+							<div class="footer__logo-wrap" data-aos="fade-right">
+								<img src="images/logo/logo_full.svg" data-scroll=".page" alt="Front-End">
+							</div>
+							<div class="footer__text-wrap" data-aos="fade-right" data-aos-anchor=".footer__logo-wrap" data-aos-delay="150">
+								<p class="footer__text"><span class="bold">Front-End</span> - это сфера IT, которой можно воплотить свои идеи и показать их всему миру.</p>
+							</div>
+							<div class="footer__networks-row df">
+								<div class="footer__network-wrap" data-aos="fade-up" data-aos-anchor=".footer__logo-wrap" data-aos-delay="300">
+									<a class="footer__network df" href="https://www.instagram.com/synfaaaaa503">
+										<span class="icon-instagram"></span>
+									</a>
+								</div>
+								<div class="footer__network-wrap" data-aos="fade-up" data-aos-anchor=".footer__logo-wrap" data-aos-delay="400">
+									<a class="footer__network df" href="https://github.com/syxx503">
+										<span class="icon-github"></span>
+									</a>
+								</div>
+								<div class="footer__network-wrap" data-aos="fade-up" data-aos-anchor=".footer__logo-wrap" data-aos-delay="500">
+									<a class="footer__network footer__network_lower df" href="https://vk.com/synfaxx503">
+										<span class="icon-vk"></span>
+									</a>
+								</div>
+								<div class="footer__network-wrap" data-aos="fade-up" data-aos-anchor=".footer__logo-wrap" data-aos-delay="600">
+									<a class="footer__network footer__network_all df" href="https://syxx503.github.io/my-social">
+										<img src="images/logo/online.svg" alt="All Networks">
+									</a>
+								</div>
+							</div>
+							<div class="footer__copyright" data-aos="fade-up" data-aos-anchor=".footer__logo-wrap" data-aos-delay="750">© Copyright 2022 synfaxx503</div>
+						</div>
+					</div>
+					<div class="footer__column footer__column_2 df">
+						<div class="footer__video-wrap">
+							<h3 class="footer__video-title" data-aos="fade-down" data-aos-anchor=".footer__logo-wrap" data-aos-delay="1200">Войти в IT</h3>
+							<div class="footer__video-iframe-wrap" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="1350"></div>
+							<div class="footer__video-arrow unselect" data-aos="fade-up" data-aos-anchor=".footer__logo-wrap" data-aos-delay="1500">
+								<span>Посмотри, как пройти путь от 0 до 1</span>
+								<img src="images/decorations/arrow.svg" alt="Arrow">
+							</div>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="footer__list-title" data-aos="fade-down" data-aos-anchor=".footer__logo-wrap" data-aos-delay="150">Мои работы</h3>
+							<ul class="footer__list unselect">
+								<li class="footer__list-item" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="300"><a class="footer__list-link footer__list-link_1" href="https://synfaxx.github.io/draw">Draw</a></li>
+								<li class="footer__list-item" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="450"><a class="footer__list-link footer__list-link_2" href="https://synfaxx.github.io/ns">NS</a></li>
+								<li class="footer__list-item" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="600"><a class="footer__list-link footer__list-link_3" href="https://freelancer-eldar.github.io/cantus">Cantus</a></li>
+								<li class="footer__list-item" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="750"><a class="footer__list-link footer__list-link_4" href="https://syxx503.github.io/saper">Saper</a></li>
+								<li class="footer__list-item" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="900"><a class="footer__list-link footer__list-link_5" href="https://freelancer-eldar.github.io/mini">Mini</a></li>
+								<li class="footer__list-item" data-aos="fade-left" data-aos-anchor=".footer__logo-wrap" data-aos-delay="1050"><a class="footer__list-link footer__list-link_6" href="https://freelancer-eldar.github.io/crowdme">CrowdMe</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="script/main.js"></script>
+</body>
+</html>
